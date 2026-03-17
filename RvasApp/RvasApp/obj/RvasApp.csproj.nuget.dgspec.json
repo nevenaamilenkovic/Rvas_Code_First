@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Vezbe RVAS\\RVAS 2025-2026\\RvasApp\\RvasApp\\RvasApp.csproj": {}
+    "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\RvasApp.csproj": {}
   },
   "projects": {
-    "F:\\Vezbe RVAS\\RVAS 2025-2026\\RvasApp\\RvasApp\\RvasApp.csproj": {
+    "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\RvasApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Vezbe RVAS\\RVAS 2025-2026\\RvasApp\\RvasApp\\RvasApp.csproj",
+        "projectUniqueName": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\RvasApp.csproj",
         "projectName": "RvasApp",
-        "projectPath": "F:\\Vezbe RVAS\\RVAS 2025-2026\\RvasApp\\RvasApp\\RvasApp.csproj",
+        "projectPath": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\RvasApp.csproj",
         "packagesPath": "C:\\Users\\milen\\.nuget\\packages\\",
-        "outputPath": "F:\\Vezbe RVAS\\RVAS 2025-2026\\RvasApp\\RvasApp\\obj\\",
+        "outputPath": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\programi\\visual studio\\Nova fascikla (3)\\NuGetPackages"

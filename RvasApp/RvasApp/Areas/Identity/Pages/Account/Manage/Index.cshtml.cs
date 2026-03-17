@@ -59,9 +59,19 @@ namespace RvasApp.Areas.Identity.Pages.Account.Manage
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
-            public string? Ime { get; set; }
-            public string? Prezime { get; set; }
-            public string? KorisnickoIme { get; set; }
+
+            [Required(ErrorMessage ="Ime je obavezno za unos")]
+            [StringLength(35, ErrorMessage = "Ime moze sadrzati najvise 35 karaktera")]
+            [Display(Name = "Ime korisnika")]
+            public string Ime { get; set; }
+
+            [Required(ErrorMessage = "Prezime je obavezno za unos")]
+            [StringLength(35, ErrorMessage = "Prezime moze sadrzati najvise 35 karaktera")]
+            public string Prezime { get; set; }
+
+            [Required(ErrorMessage = "Korisnicko ime je obavezno za unos")]
+            [StringLength(45, ErrorMessage = "Korisnicko ime moze sadrzati najvise 45 karaktera")]
+            public string KorisnickoIme { get; set; }
         }
 
         private async Task LoadAsync(Korisnik user)
@@ -116,57 +126,46 @@ namespace RvasApp.Areas.Identity.Pages.Account.Manage
                     return RedirectToPage();
                 }
             }
-
+            //ime
             if (string.IsNullOrEmpty(user.Ime))
             {
-                user.Ime=Input.Ime;
-                var updateResult = await _userManager.UpdateAsync(user);
-                if (!updateResult.Succeeded)
-                {
-                    StatusMessage = "Neuspesno dodavanje imena";
-                    return RedirectToPage();
-                }
-                else if (Input.Ime != user.Ime)
-                {
-                    StatusMessage = "Nije moguce promeniti ime";
-                    return RedirectToPage();
-                }
+                user.Ime = Input.Ime;
             }
-
+            else if(Input.Ime != user.Ime)
+            {
+                StatusMessage = "Error: Ime nije moguce menjati!";
+                return RedirectToPage();
+            }
+            //prezime
             if (string.IsNullOrEmpty(user.Prezime))
             {
                 user.Prezime = Input.Prezime;
-                var updateResult = await _userManager.UpdateAsync(user);
-                if (!updateResult.Succeeded)
-                {
-                    StatusMessage = "Neuspesno dodavanje prezimena";
-                    return RedirectToPage();
-                }
-                else if (Input.Prezime != user.Prezime)
-                {
-                    StatusMessage = "Nije moguce promeniti prezime";
-                    return RedirectToPage();
-                }
             }
-
+            else if (Input.Prezime != user.Prezime)
+            {
+                StatusMessage = "Error: Prezime nije moguce menjati!";
+                return RedirectToPage();
+            }
+            //korisnicko ime
             if (string.IsNullOrEmpty(user.KorisnickoIme))
             {
                 user.KorisnickoIme = Input.KorisnickoIme;
-                var updateResult = await _userManager.UpdateAsync(user);
-                if (!updateResult.Succeeded)
-                {
-                    StatusMessage = "Neuspesno dodavanje korisnickog imena";
-                    return RedirectToPage();
-                }
-                else if (Input.KorisnickoIme != user.KorisnickoIme)
-                {
-                    StatusMessage = "Nije moguce promeniti korisnicko ime";
-                    return RedirectToPage();
-                }
+            }
+            else if (Input.KorisnickoIme != user.KorisnickoIme)
+            {
+                StatusMessage = "Error: Korisnicko ime nije moguce menjati!";
+                return RedirectToPage();
             }
 
-            await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your profile has been updated";
+            var result = await _userManager.UpdateAsync(user);
+
+            if (!result.Succeeded)
+            {
+                StatusMessage = "Error: Greska pri azuriranju profila";
+                return RedirectToPage();
+            }
+
+            StatusMessage = "Profil je uspesno azuriran";
             return RedirectToPage();
         }
     }

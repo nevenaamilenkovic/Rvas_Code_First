@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j+cn9IDNpwI=",
+  "dgSpecHash": "6CW6iMxkKws=",
   "success": true,
-  "projectFilePath": "F:\\Vezbe RVAS\\RVAS 2025-2026\\RvasApp\\RvasApp\\RvasApp.csproj",
+  "projectFilePath": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\RvasApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\milen\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\milen\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
