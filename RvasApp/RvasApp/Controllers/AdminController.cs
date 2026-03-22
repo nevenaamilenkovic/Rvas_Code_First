@@ -96,5 +96,84 @@ namespace RvasApp.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> OduzmiInstruktorRolu(string korisnikId)
+        {
+            if (string.IsNullOrWhiteSpace(korisnikId))
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            var korisnik = await userManager.FindByIdAsync(korisnikId);
+            if (korisnik == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            var instruktor = Roles.Instruktor.ToString();
+
+            if (await userManager.IsInRoleAsync(korisnik, instruktor))
+            {
+                await userManager.RemoveFromRoleAsync(korisnik, instruktor);
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DodeliPolaznikRolu(string korisnikId)
+        {
+            if (string.IsNullOrWhiteSpace(korisnikId))
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            var korisnik = await userManager.FindByIdAsync(korisnikId);
+            if (korisnik == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            var polaznik = Roles.Polaznik.ToString();
+
+            if (!await roleManager.RoleExistsAsync(polaznik))
+            {
+                await roleManager.CreateAsync(new IdentityRole(polaznik));
+            }
+
+            if (!await userManager.IsInRoleAsync(korisnik, polaznik))
+            {
+                await userManager.AddToRoleAsync(korisnik, polaznik);
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> OduzmiPolaznikRolu(string korisnikId)
+        {
+            if (string.IsNullOrWhiteSpace(korisnikId))
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            var korisnik = await userManager.FindByIdAsync(korisnikId);
+            if (korisnik == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            var polaznik = Roles.Polaznik.ToString();
+
+            if (await userManager.IsInRoleAsync(korisnik, polaznik))
+            {
+                await userManager.RemoveFromRoleAsync(korisnik, polaznik);
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
     }
 }

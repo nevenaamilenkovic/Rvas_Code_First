@@ -60,15 +60,45 @@
                         <span>Nema uloge</span>
                     }
                 </td>
-                <td>
-                    @if(!korisnik.Roles.Contains("Instruktor")){
-                        <form asp-action="DodeliInstruktorRolu" method="post">
+                <td class="d-flex justify-content-center">
+                    @if (!korisnik.Roles.Contains("Instruktor"))
+                    {
+                        <form asp-action="DodeliInstruktorRolu" method="post" class="d-inline ms-1">
                             <input type="hidden" name="korisnikId" value="@korisnik.Id">
-                                <button type="submit" class="btn btn-sm btn-success">
-                                    Dodeli instruktor rolu
-                                </button>
+                            <button type="submit" class="btn btn-sm btn-success">
+                                Dodeli instruktor rolu
+                            </button>
                         </form>
                     }
+                    else
+                    {
+                        <form asp-action="OduzmiInstruktorRolu" method="post" class="d-inline ms-1">
+                            <input type="hidden" name="korisnikId" value="@korisnik.Id">
+                            <button type="submit" class="btn btn-sm btn-warning">
+                                Oduzmi instruktor rolu
+                            </button>
+                        </form>
+                    }
+
+                    @if (!korisnik.Roles.Any())
+                    {
+                        <form asp-action="DodeliPolaznikRolu" method="post" class="d-inline ms-1">
+                            <input type="hidden" name="korisnikId" value="@korisnik.Id" />
+                            <button type="submit" class="btn btn-sm btn-primary">
+                                Dodeli polaznik rolu
+                            </button>
+                        </form>
+                    }
+                    else if (korisnik.Roles.Contains("Polaznik"))
+                    {
+                        <form asp-action="OduzmiPolaznikRolu" method="post" class="d-inline ms-1">
+                            <input type="hidden" name="korisnikId" value="@korisnik.Id" />
+                            <button type="submit" class="btn btn-sm btn-secondary">
+                                Oduzmi polaznik rolu
+                            </button>
+                        </form>
+                    }
+
                 </td>
             </tr>
         }
