@@ -4,28 +4,63 @@
     ViewData["Title"] = "Detalji kursa";
 }
 
-<h1>Detalji kursa</h1>
+<div class="container mt-4">
 
-<dl class="row">
-    <dt class="col-sm-3">Naziv</dt>
-    <dd class="col-sm-9">@Model.Naziv</dd>
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="mb-3">@Model.Naziv</h1>
+            <p class="text-muted">
+                Instruktor:
+                <strong>@Model.Instruktor.Ime @Model.Instruktor.Prezime</strong>
+            </p>
 
-    <dt class="col-sm-3">Opis</dt>
-    <dd class="col-sm-9">@(string.IsNullOrWhiteSpace(Model.Opis) ? "-" : Model.Opis)</dd>
+            <hr />
+            <h4>Opis kursa</h4>
+            <p>
+                @(string.IsNullOrWhiteSpace(Model.Opis)
+                    ? "Nema opisa za ovaj kurss"
+                    : Model.Opis)
+            </p>
 
-    <dt class="col-sm-3">Datum početka</dt>
-    <dd class="col-sm-9">@(Model.DatumPocetka?.ToString("dd.MM.yyyy") ?? "-")</dd>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Informacije</h5>
 
-    <dt class="col-sm-3">Datum završetka</dt>
-    <dd class="col-sm-9">@(Model.DatumZavrsetka?.ToString("dd.MM.yyyy") ?? "-")</dd>
+                        <strong>Pocetak:</strong><br />
+                        @(Model.DatumPocetka?.ToString("dd.MM.yyyy") ?? "-")
+                    </p>
 
-    <dt class="col-sm-3">Maksimalan broj polaznika</dt>
-    <dd class="col-sm-9">@(Model.MaksimalanBrojPolaznika?.ToString() ?? "-")</dd>
+                    <p>
+                        <strong>Zavrsetak:</strong><br />
+                        @(Model.DatumZavrsetka?.ToString("dd.MM.yyyy") ?? "-")
+                    </p>
 
-    <dt class="col-sm-3">Instruktor</dt>
-    <dd class="col-sm-9">@Model.Instruktor.Ime @Model.Instruktor.Prezime</dd>
-    <dd class="col-sm-9">Kontakt: @Model.Instruktor.Email</dd>
-</dl>
+                    <p>
+                        <strong>Max polaznika:</strong><br />
+                        @(Model.MaksimalanBrojPolaznika?.ToString() ?? "-")
+                    </p>
 
-<a asp-action="Index" class="btn btn-secondary">Nazad na listu</a>
+                    <p>
+                        <strong>Kontakt:</strong><br />
+                        @Model.Instruktor.Email
+                    </p>
 
+                    <hr />
+                    @* polaznici ce moci da se prijavljuju na kurs sa details stranice *@
+                    <a href="#" class="btn btn-primary w-100 mb-2">
+                        Prijavi se na kurs
+                    </a>
+
+                    <a asp-action="Index" class="btn btn-outline-secondary w-100">
+                        Nazad
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
