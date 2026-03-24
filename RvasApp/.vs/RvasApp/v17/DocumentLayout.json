@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|f:\\vezbe rvas\\rvas 2025-2026\\rvas_code_first\\rvasapp\\rvasapp\\models\\kurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|solutionrelative:rvasapp\\models\\kurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|f:\\vezbe rvas\\rvas 2025-2026\\rvas_code_first\\rvasapp\\rvasapp\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|solutionrelative:rvasapp\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|f:\\vezbe rvas\\rvas 2025-2026\\rvas_code_first\\rvasapp\\rvasapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|solutionrelative:rvasapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|f:\\vezbe rvas\\rvas 2025-2026\\rvas_code_first\\rvasapp\\rvasapp\\views\\kurs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|solutionrelative:rvasapp\\views\\kurs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|f:\\vezbe rvas\\rvas 2025-2026\\rvas_code_first\\rvasapp\\rvasapp\\models\\kurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|solutionrelative:rvasapp\\models\\kurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|f:\\vezbe rvas\\rvas 2025-2026\\rvas_code_first\\rvasapp\\rvasapp\\views\\kurs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|solutionrelative:rvasapp\\views\\kurs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|f:\\vezbe rvas\\rvas 2025-2026\\rvas_code_first\\rvasapp\\rvasapp\\views\\kurs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|solutionrelative:rvasapp\\views\\kurs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Data\\Migrations\\20260324184438_TabelaPrijava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RvasApp\\Data\\Migrations\\20260324184438_TabelaPrijava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|f:\\vezbe rvas\\rvas 2025-2026\\rvas_code_first\\rvasapp\\rvasapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|solutionrelative:rvasapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|f:\\vezbe rvas\\rvas 2025-2026\\rvas_code_first\\rvasapp\\rvasapp\\models\\prijava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|solutionrelative:rvasapp\\models\\prijava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|f:\\vezbe rvas\\rvas 2025-2026\\rvas_code_first\\rvasapp\\rvasapp\\controllers\\kurscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|solutionrelative:rvasapp\\controllers\\kurscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|f:\\vezbe rvas\\rvas 2025-2026\\rvas_code_first\\rvasapp\\rvasapp\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41BB3697-D566-4473-8D80-6D79280A8045}|RvasApp\\RvasApp.csproj|solutionrelative:rvasapp\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,20 +46,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 199,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Kurs.cs",
               "DocumentMoniker": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Models\\Kurs.cs",
               "RelativeDocumentMoniker": "RvasApp\\Models\\Kurs.cs",
               "ToolTip": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Models\\Kurs.cs",
               "RelativeToolTip": "RvasApp\\Models\\Kurs.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA9wCEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwB8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T11:02:20.478Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20260324184438_TabelaPrijava.cs",
+              "DocumentMoniker": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Data\\Migrations\\20260324184438_TabelaPrijava.cs",
+              "RelativeDocumentMoniker": "RvasApp\\Data\\Migrations\\20260324184438_TabelaPrijava.cs",
+              "ToolTip": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Data\\Migrations\\20260324184438_TabelaPrijava.cs",
+              "RelativeToolTip": "RvasApp\\Data\\Migrations\\20260324184438_TabelaPrijava.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T18:44:38.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Prijava.cs",
+              "DocumentMoniker": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Models\\Prijava.cs",
+              "RelativeDocumentMoniker": "RvasApp\\Models\\Prijava.cs",
+              "ToolTip": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Models\\Prijava.cs",
+              "RelativeToolTip": "RvasApp\\Models\\Prijava.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T18:42:23.513Z",
               "EditorCaption": ""
             },
             {
@@ -64,20 +102,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Views\\Kurs\\Create.cshtml",
+              "RelativeDocumentMoniker": "RvasApp\\Views\\Kurs\\Create.cshtml",
+              "ToolTip": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Views\\Kurs\\Create.cshtml",
+              "RelativeToolTip": "RvasApp\\Views\\Kurs\\Create.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-24T18:38:38.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Details.cshtml",
               "DocumentMoniker": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Views\\Kurs\\Details.cshtml",
               "RelativeDocumentMoniker": "RvasApp\\Views\\Kurs\\Details.cshtml",
               "ToolTip": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Views\\Kurs\\Details.cshtml",
               "RelativeToolTip": "RvasApp\\Views\\Kurs\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-24T11:54:59.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Korisnik.cs",
               "DocumentMoniker": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Models\\Korisnik.cs",
               "RelativeDocumentMoniker": "RvasApp\\Models\\Korisnik.cs",
@@ -90,39 +141,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "RvasApp\\Data\\ApplicationDbContext.cs",
               "ToolTip": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "RvasApp\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T11:47:12.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Views\\Kurs\\Index.cshtml",
               "RelativeDocumentMoniker": "RvasApp\\Views\\Kurs\\Index.cshtml",
-              "ToolTip": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Views\\Kurs\\Index.cshtml",
-              "RelativeToolTip": "RvasApp\\Views\\Kurs\\Index.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAACMAAABPAAAAAAAAAA==",
+              "ToolTip": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Views\\Kurs\\Index.cshtml*",
+              "RelativeToolTip": "RvasApp\\Views\\Kurs\\Index.cshtml*",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwDcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-24T10:48:35.202Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "KursController.cs",
               "DocumentMoniker": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Controllers\\KursController.cs",
               "RelativeDocumentMoniker": "RvasApp\\Controllers\\KursController.cs",
               "ToolTip": "F:\\Vezbe RVAS\\RVAS 2025-2026\\Rvas_Code_First\\RvasApp\\RvasApp\\Controllers\\KursController.cs",
               "RelativeToolTip": "RvasApp\\Controllers\\KursController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAswEEAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAYwBQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T10:42:08.866Z",
               "EditorCaption": ""

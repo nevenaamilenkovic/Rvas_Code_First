@@ -18,7 +18,6 @@ namespace RvasApp.Controllers
             _context = context;
         }
 
-        //sredi index view!
         public async Task<IActionResult> Index()
         {
             var kursevi = await _context.Kursevi

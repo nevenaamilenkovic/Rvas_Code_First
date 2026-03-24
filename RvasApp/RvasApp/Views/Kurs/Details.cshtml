@@ -1,7 +1,31 @@
 ﻿@model RvasApp.Models.Kurs
+
 @{
+    ViewData["Title"] = "Detalji kursa";
 }
 
-<p>@Model.Naziv</p>
-<p>@Model.Opis</p>
-<p>@Model.Instruktor.Email</p>
+<h1>Detalji kursa</h1>
+
+<dl class="row">
+    <dt class="col-sm-3">Naziv</dt>
+    <dd class="col-sm-9">@Model.Naziv</dd>
+
+    <dt class="col-sm-3">Opis</dt>
+    <dd class="col-sm-9">@(string.IsNullOrWhiteSpace(Model.Opis) ? "-" : Model.Opis)</dd>
+
+    <dt class="col-sm-3">Datum početka</dt>
+    <dd class="col-sm-9">@(Model.DatumPocetka?.ToString("dd.MM.yyyy") ?? "-")</dd>
+
+    <dt class="col-sm-3">Datum završetka</dt>
+    <dd class="col-sm-9">@(Model.DatumZavrsetka?.ToString("dd.MM.yyyy") ?? "-")</dd>
+
+    <dt class="col-sm-3">Maksimalan broj polaznika</dt>
+    <dd class="col-sm-9">@(Model.MaksimalanBrojPolaznika?.ToString() ?? "-")</dd>
+
+    <dt class="col-sm-3">Instruktor</dt>
+    <dd class="col-sm-9">@Model.Instruktor.Ime @Model.Instruktor.Prezime</dd>
+    <dd class="col-sm-9">Kontakt: @Model.Instruktor.Email</dd>
+</dl>
+
+<a asp-action="Index" class="btn btn-secondary">Nazad na listu</a>
+

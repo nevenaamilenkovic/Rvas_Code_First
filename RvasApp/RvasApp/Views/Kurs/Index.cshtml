@@ -5,40 +5,53 @@
 
 <h1>Dostupni kursevi</h1>
 
-@if (User.IsInRole("Instruktor")){
-    <a asp-action="Create">Kreiraj kurs</a>
+@if (User.IsInRole("Instruktor"))
+{
+    <a asp-action="Create" class="btn btn-primary mb-3">Kreiraj kurs</a>
 }
 
-@if(!Model.Any()){
+@if (!Model.Any())
+{
     <p>Nema kurseva</p>
 }
-else{
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Naziv</th>
-                <th>Pocetak</th>
-                <th>Zavrsetak</th>
-                <th>Broj polaznika</th>
-                <th>Instruktor</th>
-                <th>Akcije</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach(var kurs in Model){
-                <tr>
-                    <td>@kurs.Naziv</td>
-                    <td>@(kurs.DatumPocetka?.ToString("dd.MM.yyyy") ?? "-")</td>
-                    <td>@(kurs.DatumZavrsetka?.ToString("dd.MM.yyyy") ?? "-")</td>
-                    <td>@(kurs.MaksimalanBrojPolaznika?.ToString()??"-")</td>
-                    <td>@(kurs.Instruktor?.Email ?? "-")</td>
-                    <td>
-                        <a asp-action="Details" asp-route-id="@kurs.Id">Detalji</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+else
+{
+    //da ne bude bas sve po tabelama :D
+    <div class="row">
+        @foreach (var kurs in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+                        <h5 class="card-title">@kurs.Naziv</h5>
+
+                        <p class="card-text">
+                            <strong>Instruktor:</strong><br />
+                            @kurs.Instruktor.Ime @kurs.Instruktor.Prezime
+                        </p>
+
+                        <p class="card-text">
+                            <strong>Početak:</strong> @(kurs.DatumPocetka?.ToString("dd.MM.yyyy") ?? "-")<br />
+                            <strong>Završetak:</strong> @(kurs.DatumZavrsetka?.ToString("dd.MM.yyyy") ?? "-")
+                        </p>
+
+                        <p class="card-text">
+                            <strong>Max polaznika:</strong>
+                            @(kurs.MaksimalanBrojPolaznika?.ToString() ?? "-")
+                        </p>
+                    </div>
+
+                    <div class="card-footer bg-transparent border-0">
+                        <a asp-action="Details"
+                           asp-route-id="@kurs.Id"
+                           class="btn btn-outline-primary w-100">
+                            Pogledaj detalje
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        }
+    </div>
 }
-
-

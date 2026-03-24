@@ -4,30 +4,36 @@
 }
 
 <form asp-action="Create" method="post">
-    <div>
-        <label asp-for="Naziv"></label>
-        <input asp-for="Naziv"/>
+    <div class="mb-3">
+        <label asp-for="Naziv" class="form-label"></label>
+        <input asp-for="Naziv" class="form-control" />
+        <span asp-validation-for="Naziv" class="text-danger"></span>
     </div>
 
-    <div>
-        <label asp-for="Opis"></label>
-        <textarea asp-for="Opis"></textarea>
+    <div class="mb-3">
+        <label asp-for="Opis" class="form-label"></label>
+        <textarea asp-for="Opis" class="form-control"></textarea>
+        <span asp-validation-for="Opis" class="text-danger"></span>
     </div>
 
-    <div>
-        <label asp-for="DatumPocetka"></label>
-        <input asp-for="DatumPocetka" />
+    <div class="mb-3">
+        <label asp-for="DatumPocetka" class="form-label"></label>
+        <input asp-for="DatumPocetka" class="form-control" />
+        <span asp-validation-for="DatumPocetka" class="text-danger"></span>
     </div>
 
-    <div>
-        <label asp-for="DatumZavrsetka"></label>
-        <input asp-for="DatumZavrsetka" />
+    <div class="mb-3">
+        <label asp-for="DatumZavrsetka" class="form-label"></label>
+        <input asp-for="DatumZavrsetka" class="form-control" />
+        <span asp-validation-for="DatumZavrsetka" class="text-danger"></span>
     </div>
 
-    <div>
-        <label asp-for="MaksimalanBrojPolaznika"></label>
-        <input asp-for="MaksimalanBrojPolaznika" />
+    <div class="mb-3">
+        <label asp-for="MaksimalanBrojPolaznika" class="form-label"></label>
+        <input asp-for="MaksimalanBrojPolaznika" class="form-control" />
+        <span asp-validation-for="MaksimalanBrojPolaznika" class="text-danger"></span>
     </div>
-    <button type="submit">Sacuvaj</button>
-    <a asp-action="Index">Nazad</a>
+
+    <button type="submit" class="btn btn-primary">Sačuvaj</button>
+    <a asp-action="Index" class="btn btn-secondary">Nazad</a>
 </form>

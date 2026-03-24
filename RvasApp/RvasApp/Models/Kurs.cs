@@ -29,5 +29,8 @@ namespace RvasApp.Models
         [ForeignKey(nameof(InstruktorId))]
         public Korisnik? Instruktor { get; set; }
 
+        public ICollection<Prijava> Prijave { get; set; } = new List<Prijava>();
+
+
     }
 }
