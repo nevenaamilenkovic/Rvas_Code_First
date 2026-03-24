@@ -1,0 +1,33 @@
+﻿@model RvasApp.Models.Kurs
+@{
+    ViewData["Title"] = "Kreiraj kurs";
+}
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="Naziv"></label>
+        <input asp-for="Naziv"/>
+    </div>
+
+    <div>
+        <label asp-for="Opis"></label>
+        <textarea asp-for="Opis"></textarea>
+    </div>
+
+    <div>
+        <label asp-for="DatumPocetka"></label>
+        <input asp-for="DatumPocetka" />
+    </div>
+
+    <div>
+        <label asp-for="DatumZavrsetka"></label>
+        <input asp-for="DatumZavrsetka" />
+    </div>
+
+    <div>
+        <label asp-for="MaksimalanBrojPolaznika"></label>
+        <input asp-for="MaksimalanBrojPolaznika" />
+    </div>
+    <button type="submit">Sacuvaj</button>
+    <a asp-action="Index">Nazad</a>
+</form>

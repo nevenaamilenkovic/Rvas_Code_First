@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RvasApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dedaf459b70cb6a4a31f45bb0ef8ef559763f88b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddee5c510e001d2b77604389224610ac5dab86e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("RvasApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RvasApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

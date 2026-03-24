@@ -1,0 +1,44 @@
+﻿@model IEnumerable<RvasApp.Models.Kurs>
+@{
+    ViewData["Title"] = "Svi kursevi";
+}
+
+<h1>Dostupni kursevi</h1>
+
+@if (User.IsInRole("Instruktor")){
+    <a asp-action="Create">Kreiraj kurs</a>
+}
+
+@if(!Model.Any()){
+    <p>Nema kurseva</p>
+}
+else{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Naziv</th>
+                <th>Pocetak</th>
+                <th>Zavrsetak</th>
+                <th>Broj polaznika</th>
+                <th>Instruktor</th>
+                <th>Akcije</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var kurs in Model){
+                <tr>
+                    <td>@kurs.Naziv</td>
+                    <td>@(kurs.DatumPocetka?.ToString("dd.MM.yyyy") ?? "-")</td>
+                    <td>@(kurs.DatumZavrsetka?.ToString("dd.MM.yyyy") ?? "-")</td>
+                    <td>@(kurs.MaksimalanBrojPolaznika?.ToString()??"-")</td>
+                    <td>@(kurs.Instruktor?.Email ?? "-")</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@kurs.Id">Detalji</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+

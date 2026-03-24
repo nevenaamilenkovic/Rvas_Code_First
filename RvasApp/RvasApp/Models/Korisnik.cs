@@ -13,5 +13,7 @@ namespace RvasApp.Models
         [StringLength(45, ErrorMessage = "Korisnicko ime moze sadrzati najvise 45 karaktera")]
         public string? KorisnickoIme { get; set; }
         public DateTime DatumRegistracije { get; set; } = DateTime.UtcNow;
+
+
     }
 }

@@ -10,5 +10,7 @@ namespace RvasApp.Data
             : base(options)
         {
         }
+        public DbSet<Kurs> Kursevi {  get; set; }
+        //public DbSet<Prijava> Prijave {  get; set; }
     }
 }
